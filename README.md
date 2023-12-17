@@ -47,8 +47,18 @@ The analysis results are
 2. the sales
 
 ### *Recommendations*
-- Invest in marketing
-- advertize more
+- *Paid apps vs free apps***
+  - Paid app have better ratings.Paid app generally receive slightly higher ratings than the free one. user who pay for an app may perceive more value leading to more engagements and higher ratings.
+  - May consider charging for the app
+
+-Language Support
+   - Apps supporting between 10 and 30 languages have better ratings.
+   - Not about the quantity of the language an app supports but the focusing on the right language 
+
+- High performing genres.
+   - There are categories like finance and book where existing apps have lower ratings. market penetration opportunities.
+
+- Apps with a longer description have better ratings.
 
 ### *Limitations* 
 
