@@ -6,6 +6,7 @@
  - [Project Overview](#project-overview)
  - [Data Source](#data-source)
  - [Tools](tools)
+ - [Recommendation](recommendation)
 
 ### *Project Overview* 
 ---
@@ -35,11 +36,48 @@ Sales Data: The primary dataset used for
 - What is the overall trend
 
 ### *Data Analysis*
+``` CREATE TABLE appleStore_description_combined AS
+SELECT * FROM appleStore_description1
+UNION ALL
+SELECT * FROM appleStore_description2
+UNION ALL
+SELECT * FROM appleStore_description3
+UNION ALL
+SELECT * FROM appleStore_description4
 ```
-Select *
-from persons
-where name == Baba
+
+-----check the number of different apps in both tables----
+``` SELECT COUNT(DISTINCT id) AS uniqueAPPIDs
+FROM AppleStore; ```
+
+``` SELECT COUNT(DISTINCT id) AS uniqueAPPIDs
+FROM appleStore_description_combined;```
+
+
+Checking for missing data in dataset
+``` SELECT COUNT(*) AS missing
+FROM AppleStore
+WHERE track_name ISNULL OR user_rating ISNULL or prime_genre;```
+
+```SELECT COUNT(*) AS missingvalues
+from appleStore_description_combined 
+WHERE app_desc ISNULL; ```
+
+find out he number apps per genre
+``` SELECT prime_genre,COUNT(*) AS NumApp
+FROM AppleStore
+GROUP BY prime_genre
+ORDER BY NumApp DESC; ```
+
+Get an overview of App ratings
+``` SELECT min(user_rating) AS MinRating,
+        max(user_rating) AS MaxRating,
+        avg(user_rating) AS AvgRating
+ from AppleStore;
+
+
 ```
+
 
 ### *Results*
 The analysis results are
