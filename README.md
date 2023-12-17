@@ -18,7 +18,8 @@ Sales Data: The primary dataset used for
 ### *Tools*
 ---
 - Excel - Data Cleaning
-  - Data Analysis Using SQLite [visit] ([https://sqliteonline.com/])
+  - Data Analysis Using SQLite [visit]
+    - (https://sqliteonline.com/)
 - SQL Server Data Analysis 
 -  PowerBI - Creating Reports
 
