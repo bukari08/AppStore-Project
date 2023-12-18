@@ -8,7 +8,7 @@
  - [Identify the Stakeholders](identify-the-stakeholders)
  - [Exploratory Data Analysis](exploratory-data-analysis)
  - [Finding the insights](finding-the-insights)
- - [Recommendations](recommendations)
+ - [Final recommendations](fijnal-recommendations)
 
 ### *1. Project Context* 
 ---
