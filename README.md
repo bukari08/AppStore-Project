@@ -82,7 +82,7 @@ ORDER BY NumApp DESC;
  Get an overview of App ratings
  ```
 SELECT min(user_rating) AS MinRating,
-        max(user_rating) AS MaxRating,
+ 	max(user_rating) AS MaxRating,
         avg(user_rating) AS AvgRating
  from AppleStore;
  ``` 
@@ -93,51 +93,50 @@ a.  Determine whether paid Apps have higher ratings than free AppsAppleStore
 
 ```
 SELECT CASE
- 				WHEN price > 0 THEN 'Paid'
-                ELSE 'Free'
-             END AS App_Type,
-             avg(user_rating) AS AvgRating
- from AppleStore
+	WHEN price > 0 THEN 'Paid'
+        ELSE 'Free'
+        END AS App_Type,
+        avg(user_rating) AS AvgRating
+ FROM AppleStore
  GROUP BY App_Type;
 ```
 
 b.  Determine if Apps with suported language have higher ratings.
  ```
 SELECT CASE
- 				WHEN lang_num < 10 THEN '<10 languages'
-                WHEN lang_num BETWEEN 10 and 30 THEN '10-30 languages'
-                ELSE  '>30 languages'
-              END as language_bucket,
-              avg(user_rating) AS AvgRating
-from AppleStore
+ 	WHEN lang_num < 10 THEN '<10 languages'
+        WHEN lang_num BETWEEN 10 and 30 THEN '10-30 languages'
+        ELSE  '>30 languages'
+        END as language_bucket,
+        avg(user_rating) AS AvgRating
+FROM AppleStore
 GROUP BY language_bucket
 order BY AvgRating DESC;
 ```
 
 
-c. check genre with low rating
+c. Check Genre with low rating
 
 ``` 
 SELECT prime_genre,
        avg(user_rating) AS AvgRating
-from AppleStore
+FROM AppleStore
 GROUP BY prime_genre
-order by AvgRating ASC
+ORDER BY AvgRating ASC
 LIMIT 10;
 ```
 
 d. Check Top rated App for each genre
 
 ```
-SELECT prime_genre, 
-		track_name,
+SELECT prime_genre,
+	track_name,
         user_rating
-from (
-        SELECT prime_genre,
-  				track_name,
-  				user_rating,
-		RANK() OVER(PARTITION BY prime_genre ORDER BY user_rating DESC, 	rating_count_tot DESC) AS RANK 
-        from AppleStore
+FROM (
+	 SELECT prime_genre, track_name,user_rating,
+		RANK() OVER(PARTITION BY prime_genre ORDER BY user_rating DESC,
+	rating_count_tot DESC) AS RANK 
+        FROM AppleStore
   		)
         AS a 
 WHERE
