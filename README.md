@@ -3,9 +3,11 @@
 ---
 ## *Table of Contents*
 ---
- - [Project Overview](#project-overview)
- - [Data Source](#data-source)
- - [Tools](tools)
+ - [Project Context](#project-context)
+ - [Connect to the Dataset](#connect-to-the-dataset)
+ - [Identify the Stakeholders](identify-the-stakeholders)
+ - [Exploratory Data Analysis](exploratory-data-analysis)
+ - - [Tools](tools)
  - [Recommendation](recommendation)
 
 ### *Project Overview* 
