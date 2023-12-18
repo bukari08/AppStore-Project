@@ -33,7 +33,7 @@ UNION ALL
 SELECT * FROM appleStore_description4
 ```
 
-### *3. Identify the  Stakeholders*
+### *3. Identify the Stakeholders*
 ---
 The stakeholders for this project is an aspiring app developer who needs data driven insights to decide what type of app to build and so may seek answer to questions like what app categories are the most popular, what price should they set, and to can they  maximize user ratings.
 
