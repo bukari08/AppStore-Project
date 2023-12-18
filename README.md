@@ -4,11 +4,7 @@
 ## *Table of Contents*
 ---
  - [1. Project Context](#project-context)
- - [2. Connect to the Dataset](#Connect-to-the-Dataset)
- - [3. Identify the Stakeholders](#Identify-the-Stakeholders)
- - [4. Exploratory Data Analysis(EDA)](#4-Exploratory-Data-Analysis-(EDA))
- - [5. Finding the Insights](5-Finding-the-Insights)
- - [6. Final Recommendations](Final-Recommendations)
+ - [1. Project Context](1.project-content)
 
 ### *1. Project Context* 
 ---
