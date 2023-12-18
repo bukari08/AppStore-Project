@@ -4,11 +4,11 @@
 ## *Table of Contents*
 ---
  - [1. Project Context](#project-context)
- - [Connect to the Dataset](#connect-to-the-dataset)
- - [Identify the Stakeholders](#identify-the-stakeholders)
- - [Exploratory Data Analysis](exploratory-data-analysis)
- - [Finding the insights](#finding-the-insights)
- - [6. Final Recommendations](#final-recommendations)
+ - [2. Connect to the Dataset](#connect-to-the-dataset)
+ - [3. Identify the Stakeholders](#identify-the-stakeholders)
+ - [4. Exploratory Data Analysis](#4-exploratory-data-analysis)
+ - [5. Finding the insights](5-finding-the-insights)
+ - [6. Final Recommendations](final-recommendations)
 
 ### *1. Project Context* 
 ---
