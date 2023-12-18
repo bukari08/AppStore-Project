@@ -4,11 +4,11 @@
 ## *Table of Contents*
 ---
  - [1. Project Context](#project-context)
- - [2. Connect to the Dataset](#connect-to-the-dataset)
- - [3. Identify the Stakeholders](#identify-the-stakeholders)
- - [4. Exploratory Data Analysis](#4-exploratory-data-analysis)
- - [5. Finding the insights](5-finding-the-insights)
- - [6. Final Recommendations](final-recommendations)
+ - [2. Connect to the Dataset](#Connect-to-the-Dataset)
+ - [3. Identify the Stakeholders](#Identify-the-Stakeholders)
+ - [4. Exploratory Data Analysis(EDA)](#4-Exploratory-Data-Analysis-(EDA))
+ - [5. Finding the Insights](5-Finding-the-Insights)
+ - [6. Final Recommendations](Final-Recommendations)
 
 ### *1. Project Context* 
 ---
@@ -87,7 +87,7 @@ SELECT min(user_rating) AS MinRating,
  from AppleStore;
  ``` 
 
-### *5. Finding the insights*
+### *5. Finding the Insights*
 ---
 a.  Determine whether paid Apps have higher ratings than free AppsAppleStore
 
