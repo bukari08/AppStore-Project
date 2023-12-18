@@ -8,7 +8,7 @@
  - [Identify the Stakeholders](identify-the-stakeholders)
  - [Exploratory Data Analysis](exploratory-data-analysis)
  - [Finding the insights](finding-the-insights)
- - [Final recommendations](fijnal-recommendations)
+ - [Final Recommendations](final-recommendations)
 
 ### *1. Project Context* 
 ---
@@ -146,7 +146,7 @@ a.rank=1
 
 
 
-### * 6. Final recommendations*
+### * 6. Final Recommendations*
 
 - *Paid apps vs free apps***
   - Paid app have better ratings.Paid app generally receive slightly higher ratings than the free one. user who pay for an app may perceive more value leading to more engagements and higher ratings.
